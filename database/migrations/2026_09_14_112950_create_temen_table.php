@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('temen', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_teman');
+            $table->date('tanggal_lahir');
+            $table->integer('nomor_kursi');
+            $table->string('hobi');
+            $table->string('makanan_favorit');
             $table->timestamps();
         });
     }
